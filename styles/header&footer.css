@@ -1,0 +1,49 @@
+.header {
+  padding: 0 64px;
+  border-bottom: 2px solid var(--white-color);
+  width: 100%;
+  height: 56px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-wrapper {
+  padding-right: 60px;
+  height: 100%;
+  border-right: 2px solid var(--white-color);
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  height: 100%;
+}
+.header-nav__list {
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+}
+.header-nav__item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-nav__item:first-child {
+  padding: 0 60px;
+  border-left: 2px solid var(--white-color);
+}
+.header-nav__item:nth-child(2) {
+  padding: 0 60px;
+  border-left: 2px solid var(--white-color);
+  border-right: 2px solid var(--white-color);
+}
+.header-nav__item:last-child {
+  padding-left: 60px;
+}
+.header-nav__link {
+  font-family: "UpheavalPro", monospace;
+  color: var(--white-color);
+  font-size: 24px;
+  letter-spacing: -1%;
+  text-decoration: none;
+}
