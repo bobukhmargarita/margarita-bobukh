@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winter Arc</title>
+    <title>WinterArc</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/header&footer.css">
+    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/components.css">
 </head>
 
 <body>
@@ -34,7 +36,43 @@
             </ul>
         </nav>
     </header>
+    <div class="hero">
+        <div class="hero__title-wrapper">
+            <h1 class="hero__title">Winter Arc</h1>
+        </div>
+        <div class="animated-line animated-line--arrows-left animated-line--scroll-left animated-line--label-left"
+            data-text="Your season of internal upgrades">
+            <div class="animated-line__viewport">
+                <div class="animated-line__track"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-content__blur"></div>
+            <button class="hero-content__button">START YOUR WINTER ARC
+                <svg class="hero-content__button-arrow" viewBox="0 0 22 22" fill="none">
+                    <path d="M0.397659 0V4.36209H14.532L0 18.9015L3.04099 22L17.6795 7.35357V21.7513H22V0H0.397659Z"
+                        fill="white" />
+                </svg>
+            </button>
+            <ul class="hero-content__row">
+                <li class="hero-content__quote">
+                    Slower rhythm. Deeper changes. Small steps that give a big start to the new year.
+                </li>
+                <li class="hero-content__quote">
+                    Time to refine routines, skills, and mindset
+                </li>
+            </ul>
+        </div>
+        <div class="animated-line animated-line--arrows-right animated-line--scroll-right animated-line--label-right"
+            data-text="Consistency over intensity">
+            <div class="animated-line__viewport">
+                <div class="animated-line__track"></div>
+            </div>
+        </div>
+        <img src="./assets/images/hero-dude.png" alt="Man training" class="hero__image">
+    </div>
 
+    <script src="./scripts/animated-line.js"></script>
     <section>
     </section>
 
