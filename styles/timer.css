@@ -1,0 +1,83 @@
+.timer-section {
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 80px;
+  padding: 8px 0;
+}
+
+.timer__title {
+  font-size: 54px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.timer {
+  width: 1095px;
+  height: 95px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-color);
+  text-align: center;
+  white-space: nowrap;
+  font-family: "FrulaExtravagant";
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 5.12px;
+  text-transform: uppercase;
+}
+
+.timer__value {
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.timer__separator {
+  width: 65px;
+  flex-shrink: 0;
+}
+
+.timer__labels {
+  display: flex;
+  width: 1095px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timer__label {
+  display: -webkit-box;
+  width: 180px;
+  -webkit-box-orient: vertical;
+  line-clamp: 1;
+  flex-shrink: 0;
+  overflow: hidden;
+  color: var(--white-color);
+  text-align: center;
+  text-overflow: ellipsis;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.timer__description {
+  width: 895px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--white-color);
+}
