@@ -11,3 +11,15 @@
 .cta-section a {
   width: 650px;
 }
+
+/***** RESPONSIVE *****/
+
+@media screen and (max-width: 560px) {
+  .cta-section {
+    padding: 0 20px;
+    height: 200px;
+  }
+  .cta-section a {
+    width: 100%;
+  }
+}

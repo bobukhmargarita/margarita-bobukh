@@ -60,3 +60,39 @@
   letter-spacing: -0.42px;
   line-clamp: 2;
 }
+
+/***** RESPONSIVE *****/
+
+@media screen and (max-width: 560px) {
+  .tips-content {
+    flex-direction: column;
+  }
+  .tips__image-wrapper {
+    height: 550px;
+    width: 100%;
+    aspect-ratio: auto;
+  }
+  .tips-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .tips-grid__item-title {
+    font-size: 14px;
+  }
+  .tips-grid__item-description {
+    font-size: 12px;
+  }
+  .tips-grid__item {
+    padding: 40px 20px;
+    flex: auto;
+    gap: 14px;
+  }
+  .tips-grid__item-icon {
+    width: 42px;
+    height: 20px;
+  }
+  .tips-grid__row {
+    flex-wrap: wrap;
+  }
+}

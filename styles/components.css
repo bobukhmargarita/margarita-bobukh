@@ -133,3 +133,14 @@
     transform: translateX(0);
   }
 }
+
+/***** RESPONSIVE *****/
+
+@media screen and (max-width: 560px) {
+  .animated-line {
+    height: 44px;
+  }
+  .animated-line__text {
+    font-size: 16px;
+  }
+}

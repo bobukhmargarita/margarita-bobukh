@@ -24,15 +24,12 @@
 }
 
 .timer {
-  width: 1095px;
-  height: 95px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--white-color);
   text-align: center;
   white-space: nowrap;
-  font-family: "FrulaExtravagant";
   font-size: 128px;
   font-style: normal;
   font-weight: 400;
@@ -41,25 +38,33 @@
 }
 
 .timer__value {
-  width: 180px;
   flex-shrink: 0;
+  font-family: "Frula";
+  width: 200px;
+  text-align: center;
+}
+.timer__value:first-child {
+  width: 250px;
+  text-align: right;
 }
 
 .timer__separator {
-  width: 65px;
   flex-shrink: 0;
+  font-family: "Frula";
+  text-align: center;
+  width: 100px;
 }
 
 .timer__labels {
   display: flex;
-  width: 1095px;
   justify-content: space-between;
   align-items: center;
+  gap: 100px;
 }
 
 .timer__label {
   display: -webkit-box;
-  width: 180px;
+  width: 200px;
   -webkit-box-orient: vertical;
   line-clamp: 1;
   flex-shrink: 0;
@@ -74,10 +79,51 @@
   line-height: normal;
   text-transform: uppercase;
 }
+.timer__label:first-child {
+  width: 250px;
+}
 
 .timer__description {
-  width: 895px;
+  max-width: 895px;
   font-weight: 700;
   text-align: center;
   color: var(--white-color);
+}
+
+/***** RESPONSIVE *****/
+
+@media screen and (max-width: 560px) {
+  .timer-section {
+    padding: 40px 20px;
+    padding-top: 80px;
+    height: auto;
+    gap: 64px;
+  }
+  .timer__title {
+    font-size: 20px;
+  }
+  .timer {
+    font-size: 32px;
+  }
+  .timer__value,
+  .timer__label {
+    width: 60px;
+  }
+  .timer__value:first-child,
+  .timer__label:first-child {
+    width: 80px;
+    text-align: center;
+  }
+  .timer__label {
+    font-size: 12px;
+  }
+  .timer__labels {
+    gap: 20px;
+  }
+  .timer__separator {
+    width: 20px;
+  }
+  .timer__description {
+    font-size: 12px;
+  }
 }

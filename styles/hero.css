@@ -48,6 +48,7 @@
   fill: var(--white-color);
 }
 .hero-content__row {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   width: 540px;
@@ -73,4 +74,44 @@
   height: 70%;
   width: auto;
   z-index: 0;
+}
+
+/***** RESPONSIVE *****/
+
+@media screen and (max-width: 560px) {
+  .hero-content {
+    padding: 50px 20px;
+    justify-content: flex-start;
+  }
+  .hero__title-wrapper {
+    margin-top: 56px;
+    padding: 32px 0;
+  }
+  .hero__title {
+    font-size: 48px;
+  }
+  .cta__button-arrow {
+    width: 12px;
+  }
+  .hero-content__row {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .hero-content__quote {
+    font-size: 10px;
+  }
+  .hero-content__quote:first-child {
+    width: 55%;
+  }
+  .hero-content__quote:last-child {
+    width: 35%;
+  }
+  .hero__image {
+    bottom: 44px;
+    height: 40%;
+    width: 100%;
+    object-fit: contain;
+    object-position: bottom;
+  }
 }
